@@ -10,7 +10,9 @@ var assert = require('assert')
   , fs = require('fs')
   , net = require('net')
   , common = require('./common')
-  , Memcached = require('../');
+  , Memcached = require('../')
+  , should = require('should')
+;
 
 global.testnumbers = global.testnumbers || +(Math.random(10) * 1000000).toFixed();
 
