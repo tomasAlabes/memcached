@@ -1,16 +1,13 @@
 {
-  "name": "@tomasAlabes/memcached",
+  "name": "@talabes/memcached",
   "version": "2.3.1",
   "author": "Arnout Kazemier",
   "maintainers": [
-    {
-      "name": "Tomas Alabes"
-    }
+    "Tomas Alabes"
   ],
   "description": "A fully featured Memcached API client, supporting both single and clustered Memcached servers through consistent hashing and failover/failure. Memcached is rewrite of nMemcached, which will be deprecated in the near future.",
   "main": "index",
   "keywords": [
-    "InnoDB memcached API",
     "cache",
     "client",
     "cluster",
@@ -25,18 +22,27 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/tomasAlabes/node-memcached.git"
+    "url": "git+ssh://git@github.com/tomasAlabes/memcached.git"
   },
   "dependencies": {
-    "hashring": "3.2.x",
-    "jackpot": ">=0.0.6"
+    "hashring": "3.2.0",
+    "jackpot": "0.0.6"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*",
-    "pre-commit": "*"
+    "mocha": "8.1.1",
+    "should": "13.2.3",
+    "pre-commit": "1.2.2"
   },
   "scripts": {
     "test": "mocha $(find test -name '*.test.js') --exit"
+  },
+  "bugs": {
+    "url": "https://github.com/tomasAlabes/memcached/issues"
+  },
+  "homepage": "https://github.com/tomasAlabes/memcached#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
   }
 }

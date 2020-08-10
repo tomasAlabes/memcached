@@ -16,6 +16,8 @@
  */
 var testMemcachedHost = process.env.MEMCACHED__HOST || '127.0.0.1';
 
+require('should');
+
 exports.servers = {
     single: testMemcachedHost + ':11211'
   , multi: [

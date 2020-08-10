@@ -4,7 +4,6 @@
  * Test dependencies
  */
 var assert = require('assert')
-  , fs = require('fs')
   , common = require('./common')
   , Memcached = require('../');
 
@@ -131,6 +130,7 @@ describe('Memcached tests with Namespaces', function () {
         ok.should.be.true;
 
         memcached.get(['test1', 'test2', 'test3', 'test4', 'test5'], function (error, answer) {
+          assert.ok(!error);
           ++callbacks;
           assert.ok(typeof answer === 'object');
           answer.test1.should.eql('test1answer');
