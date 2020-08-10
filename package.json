@@ -1,5 +1,5 @@
 {
-  "name": "memcached",
+  "name": "@tomasAlabes/memcached",
   "version": "2.3.1",
   "author": "Arnout Kazemier",
   "maintainers": [
